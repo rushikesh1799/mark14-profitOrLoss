@@ -29,7 +29,7 @@ function submitHandler(event) {
 function calculateProfitAndLoss(initialPrice, stocksQuantity, currentPrice) {
     if (initialPrice > currentPrice) {
         // loss logic
-        let loss = ((currentPrice - initialPrice) * stocksQuantity);
+        let loss = -((currentPrice - initialPrice) * stocksQuantity);
         let lossPercentage = (loss / (initialPrice*stocksQuantity))*100;
         showOutput(`Tough luck 😕, your Loss is : ${loss} and your Percentage of loss is : ${lossPercentage}%`);   
     } else if (currentPrice > initialPrice) {
