@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3dec9;
+}
+
+header h1 {
+    text-align: center;
+    margin: 1.5rem;
+    color: #ff5200;
+    font-weight: 1000;
+}
+
+main {
+    margin: 5px;
+    padding: 5px;
+}
+
+.input-label {
+    display: block;
+    font-size: larger;
+    margin: 1.5rem 0px;
+    font-weight: 600;
+}
+
+.input {
+    font-size: large;
+    display: block;
+    outline: #fff;
+    padding: 0.6rem 1rem;
+    margin: 1rem auto;
+    border: 2px solid #ff5200;
+    background-color: #00546c;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 325px;
+}
+
+::placeholder {
+    color: gainsboro;
+    opacity: 10;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#submit-btn {
+    background: #ff5200;
+    border: none;
+    color: #fff;
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: #fff;
+    margin: auto;
+    display: block;
+}
+
+#submit-btn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
+.output {
+    font-size: large;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .input {
+        max-width: 275px;
+    }
+}
