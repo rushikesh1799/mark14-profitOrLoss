@@ -6,7 +6,9 @@ Tech Stack : HTML, CSS, Javascript
 
 ## Image 
 <div align="center">
-<img src="" width="90%"/>
+<img src="https://raw.githubusercontent.com/rushikesh1799/mark14-profitOrLoss/main/images/profitOrLoss.png" width="90%"/>
 </div>
+
+##
 
 You can see Live project [here]()
