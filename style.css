@@ -75,6 +75,27 @@ input::-webkit-inner-spin-button {
     margin: 2rem 0;
 }
 
+/* footer */
+
+.footer-text a {
+    text-decoration: none;
+    /* background-color: #00546c; */
+    border: 2px solid #ff5200;
+    padding: 3px;
+    border-radius: 5px;
+    color: #00546c;
+}
+
+.footer-text a:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid #FFFFFF;
+}
+
+/* .link {
+    color: #00546c;
+} */
+
 @media screen and (max-width: 600px) {
     .input {
         max-width: 275px;
