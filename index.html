@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stocks</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stocks</title>
-    <link rel="stylesheet" href="style.css">
-    
-</head>
+    <body>
+        <header>
+            <h1>Stock Profit & Loss Calculator</h1>
+        </header>
 
-<body>
+        <main>
+            <label class="input-label" for="initial-price"
+                >Initial Price :
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Enter the Buy price"
+                    id="initial-price"
+                />
+            </label>
 
-    <header>
-        <h1>Stock Profit & Loss Calculator</h1>
-    </header>
-    
+            <label class="input-label" for="stocks-quantity"
+                >Quantity of Stocks :
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Number of stocks bought"
+                    id="stocks-quantity"
+                />
+            </label>
 
-    <main>
-    
-        <label class="input-label" for="initial-price">Initial Price :
-            <input class="input" type="number" placeholder="Enter the Buy price" id="initial-price">
-        </label>
-    
-        <label class="input-label" for="stocks-quantity">Quantity of Stocks :
-            <input class="input" type="number" placeholder="Number of stocks bought" id="stocks-quantity">
-        </label>
-    
-        <label class="input-label" for="current-price">Final Price :
-            <input class="input" type="number" placeholder="Enter the Sell price" id="current-price">
-        </label>
-        
-        <Button id="submit-btn">Calculate</Button>
-        
-    
-        <div class="output" id="output-box">
-    
-        </div>
-    
-    </main>
+            <label class="input-label" for="current-price"
+                >Final Price :
+                <input
+                    class="input"
+                    type="number"
+                    placeholder="Enter the Sell price"
+                    id="current-price"
+                />
+            </label>
 
-    
-</body>
+            <button id="submit-btn">Calculate</button>
 
-<script src="app.js"></script>
+            <div class="output" id="output-box"></div>
+        </main>
 
+        <footer>
+            <p class="footer-text">
+                Developed By
+                <a href="" className="link"> Rushikesh </a>
+            </p>
+        </footer>
+    </body>
+
+    <script src="app.js"></script>
 </html>
