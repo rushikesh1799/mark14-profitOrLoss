@@ -19,7 +19,10 @@ function submitHandler(event) {
     let curr = Number(currentPrice.value);
     if(ip<0|| qty<0||curr<0 ) {
         showOutput("Initial value or quantity or curr value can't be negative");  
-    }else if (ip == 0 && qty == 00 && curr == 0) {
+    }else if (ip == 0 || qty == 00 || curr == 0) {
+        // console.log(ip);
+        // console.log(qty);
+        // console.log(curr);
         showOutput("Please enter all the values correctly");
     } else {
         calculateProfitAndLoss(ip,qty,curr);
@@ -31,19 +34,33 @@ function calculateProfitAndLoss(initialPrice, stocksQuantity, currentPrice) {
         // loss logic
         let loss = -((currentPrice - initialPrice) * stocksQuantity);
         let lossPercentage = (loss / (initialPrice*stocksQuantity))*100;
-        showOutput(`Tough luck 😕, your Loss is : ${loss} and your Percentage of loss is : ${lossPercentage}%`);   
+        showOutput(`Tough luck 😕, your Loss is : ${loss} and your Percentage of loss is : ${lossPercentage}%`);  
+        ChangeColorOfLoss() 
     } else if (currentPrice > initialPrice) {
         // profit logic
         let profit = ((currentPrice - initialPrice) * stocksQuantity);
         let profitPercentage = (profit / (initialPrice*stocksQuantity))*100;
         showOutput(`That's Fantastic! 🥳, your Profit is : ${profit} and your Percentage of Profit is : ${profitPercentage}%`); 
-        
+        ChangeColorOfProfit()
     } else{
         // no profit no loss logic
         showOutput(`No Pain No Gain AND No Gain No Pain`);  
+        noPainNoGainBg()
     } 
 }
 
 function showOutput(message) {
     outputBox.innerHTML = message;
+}
+
+function ChangeColorOfProfit() {
+    document.body.style.backgroundColor = "#25c600";
+}
+
+function ChangeColorOfLoss() {
+    document.body.style.backgroundColor = "#b10000";
+}
+
+function noPainNoGainBg() {
+    document.body.style.backgroundColor = "#f3dec9";
 }
