@@ -14,37 +14,42 @@
         </header>
 
         <main>
-            <label class="input-label" for="initial-price"
-                >Initial Price :
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Enter the Buy price"
-                    id="initial-price"
-                />
-            </label>
+            <form action="">
+                <label class="input-label" for="initial-price"
+                    >Initial Price :
+                    <input
+                        class="input"
+                        type="number"
+                        placeholder="Enter the Buy price"
+                        id="initial-price"
+                        required
+                    />
+                </label>
 
-            <label class="input-label" for="stocks-quantity"
-                >Quantity of Stocks :
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Number of stocks bought"
-                    id="stocks-quantity"
-                />
-            </label>
+                <label class="input-label" for="stocks-quantity"
+                    >Quantity of Stocks :
+                    <input
+                        class="input"
+                        type="number"
+                        placeholder="Number of stocks bought"
+                        id="stocks-quantity"
+                        required
+                    />
+                </label>
 
-            <label class="input-label" for="current-price"
-                >Final Price :
-                <input
-                    class="input"
-                    type="number"
-                    placeholder="Enter the Sell price"
-                    id="current-price"
-                />
-            </label>
+                <label class="input-label" for="current-price"
+                    >Final Price :
+                    <input
+                        class="input"
+                        type="number"
+                        placeholder="Enter the Sell price"
+                        id="current-price"
+                        required
+                    />
+                </label>
 
-            <button id="submit-btn">Calculate</button>
+                <button id="submit-btn" type="submit">Calculate</button>
+            </form>
 
             <div class="output" id="output-box"></div>
         </main>
