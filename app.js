@@ -17,13 +17,13 @@ function submitHandler(event) {
     let ip = Number(initialPrice.value);
     let qty = Number(stocksQuantity.value);
     let curr = Number(currentPrice.value);
-    if(ip<0|| qty<0||curr<0 ) {
+    if(ip<0 || qty<0 || curr<0 ) {
         showOutput("Initial value or quantity or curr value can't be negative");  
-    }else if (ip == 0 || qty == 00 || curr == 0) {
-        // console.log(ip);
-        // console.log(qty);
-        // console.log(curr);
-        showOutput("Please enter all the values correctly");
+    }else if (ip == "" || qty == "" || curr == "") {
+        console.log(ip);
+        console.log(qty);
+        console.log(curr);
+        showOutput("Initial Price or Quantity of Stocks or Final Price can not be 0, Please enter all the values correctly");
     } else {
         calculateProfitAndLoss(ip,qty,curr);
     }
